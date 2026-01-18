@@ -1,0 +1,16 @@
+# Python bytecode (auto-generated)
+__pycache__/
+*.pyc
+
+# Virtual Environments (if you use one)
+venv/
+env/
+.env
+
+# Editor-specific files
+.cursor/
+.vscode/
+.DS_Store
+
+# Flask instance folder
+instance/

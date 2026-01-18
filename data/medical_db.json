@@ -1,0 +1,64 @@
+{
+  "symptoms": {
+    "toothache": {
+      "keywords": ["tooth", "teeth", "toothache", "dental pain", "gum", "cavity"],
+      "specialist": "Dentist",
+      "description": "A dentist specializes in oral health, including teeth and gums. They can diagnose and treat dental issues like cavities, gum disease, and tooth pain.",
+      "urgency": "normal"
+    },
+    "blurry_vision": {
+      "keywords": ["vision", "eye", "blurry", "sight", "reading", "glasses", "optometrist"],
+      "specialist": "Optometrist",
+      "description": "An optometrist specializes in eye health and vision. They can perform eye exams, prescribe glasses, and detect eye conditions.",
+      "urgency": "normal"
+    },
+    "heart_pain": {
+      "keywords": ["chest", "heart", "cardiac", "chest pain", "heartbeat", "palpitations"],
+      "specialist": "Cardiologist",
+      "description": "A cardiologist specializes in heart and cardiovascular system health. They diagnose and treat heart conditions.",
+      "urgency": "high"
+    },
+    "skin_rash": {
+      "keywords": ["skin", "rash", "acne", "eczema", "dermatitis", "allergy", "itchy"],
+      "specialist": "Dermatologist",
+      "description": "A dermatologist specializes in skin, hair, and nail conditions. They treat issues like rashes, acne, and skin allergies.",
+      "urgency": "normal"
+    },
+    "headache": {
+      "keywords": ["headache", "migraine", "head pain", "tension"],
+      "specialist": "Neurologist",
+      "description": "A neurologist specializes in the nervous system, including the brain. They can help diagnose and treat chronic headaches and migraines.",
+      "urgency": "normal"
+    },
+    "joint_pain": {
+      "keywords": ["joint", "arthritis", "knee", "elbow", "wrist", "ankle", "rheumatoid"],
+      "specialist": "Rheumatologist",
+      "description": "A rheumatologist specializes in joint, muscle, and bone disorders. They treat conditions like arthritis and joint pain.",
+      "urgency": "normal"
+    },
+    "ear_pain": {
+      "keywords": ["ear", "hearing", "earache", "ear infection", "tinnitus"],
+      "specialist": "ENT Specialist (Otolaryngologist)",
+      "description": "An ENT (Ear, Nose, Throat) specialist treats conditions related to the ears, nose, and throat, including ear infections and hearing problems.",
+      "urgency": "normal"
+    },
+    "back_pain": {
+      "keywords": ["back", "spine", "spinal", "lower back", "upper back"],
+      "specialist": "Orthopedist",
+      "description": "An orthopedist specializes in bones, joints, ligaments, and muscles. They treat back pain and spinal conditions.",
+      "urgency": "normal"
+    },
+    "cough": {
+      "keywords": ["cough", "respiratory", "breathing", "asthma", "lung", "bronchitis"],
+      "specialist": "Pulmonologist",
+      "description": "A pulmonologist specializes in respiratory system and lung health. They treat conditions like asthma, bronchitis, and breathing problems.",
+      "urgency": "normal"
+    },
+    "stomach_pain": {
+      "keywords": ["stomach", "abdomen", "digestive", "nausea", "vomiting", "diarrhea", "gi"],
+      "specialist": "Gastroenterologist",
+      "description": "A gastroenterologist specializes in the digestive system, including the stomach and intestines. They treat digestive issues and stomach problems.",
+      "urgency": "normal"
+    }
+  }
+}

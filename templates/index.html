@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Health Assistant</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Smart Health Assistant</h1>
+            <p class="subtitle">Your Personal Health Hub</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="bmi">BMI Calculator</button>
+            <button class="tab-btn" data-tab="symptom">Symptom Guide</button>
+            <button class="tab-btn" data-tab="checklist">Health Checklist</button>
+            <button class="tab-btn" data-tab="medicine">Medicine Reminder</button>
+            <button class="tab-btn" data-tab="firstaid">First Aid</button>
+        </nav>
+
+        <!-- BMI Calculator Tab -->
+        <section id="bmi" class="tab-content active">
+            <h2>BMI Calculator</h2>
+            <div class="bmi-container">
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter height in cm" min="50" max="250">
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight in kg" min="10" max="300">
+                </div>
+                <button onclick="calculateBMI()" class="btn-primary">Calculate BMI</button>
+                <div id="bmi-result" class="bmi-result"></div>
+            </div>
+        </section>
+
+        <!-- Symptom-to-Specialist Guide Tab -->
+        <section id="symptom" class="tab-content">
+            <h2>Symptom-to-Specialist Guide</h2>
+            <div class="symptom-container">
+                <div class="input-group">
+                    <label for="symptom-input">Enter your symptoms (comma-separated):</label>
+                    <input type="text" id="symptom-input" placeholder="e.g., toothache, blurry vision, headache">
+                </div>
+                <button onclick="checkSymptom()" class="btn-primary">Find Specialist</button>
+                <div id="symptom-result" class="symptom-result"></div>
+            </div>
+        </section>
+
+        <!-- Daily Health Checklist Tab -->
+        <section id="checklist" class="tab-content">
+            <h2>Daily Health Checklist</h2>
+            <div class="checklist-container">
+                <div class="input-group">
+                    <input type="text" id="checklist-input" placeholder="Add a health habit (e.g., Drank 8 glasses of water)">
+                    <button onclick="addChecklistItem()" class="btn-primary">Add Item</button>
+                </div>
+                <ul id="checklist-items" class="checklist-items"></ul>
+            </div>
+        </section>
+
+        <!-- Medicine Reminder Tab -->
+        <section id="medicine" class="tab-content">
+            <h2>Medicine Reminder</h2>
+            <div class="medicine-container">
+                <div class="input-group">
+                    <label for="medicine-name">Medicine Name:</label>
+                    <input type="text" id="medicine-name" placeholder="Enter medicine name">
+                </div>
+                <div class="input-group">
+                    <label for="medicine-time">Time:</label>
+                    <input type="time" id="medicine-time">
+                </div>
+                <button onclick="setMedicineReminder()" class="btn-primary">Set Reminder</button>
+                <div id="medicine-list" class="medicine-list"></div>
+            </div>
+        </section>
+
+        <!-- First Aid Quick Search Tab -->
+        <section id="firstaid" class="tab-content">
+            <h2>First Aid Quick Search</h2>
+            <div class="firstaid-container">
+                <div class="input-group">
+                    <label for="firstaid-search">Search first aid instructions:</label>
+                    <input type="text" id="firstaid-search" placeholder="e.g., Burn, Choking, Cut" onkeyup="searchFirstAid()">
+                </div>
+                <div id="firstaid-result" class="firstaid-result"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
